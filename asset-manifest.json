@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/NickVelasco/static/css/main.8c9c444e.css",
+    "main.js": "/NickVelasco/static/js/main.61c8f7ef.js",
+    "static/js/787.4b24f717.chunk.js": "/NickVelasco/static/js/787.4b24f717.chunk.js",
+    "static/media/NickJoeVelasco.png": "/NickVelasco/static/media/NickJoeVelasco.2e6cc61863652c66aa49.png",
+    "index.html": "/NickVelasco/index.html",
+    "main.8c9c444e.css.map": "/NickVelasco/static/css/main.8c9c444e.css.map",
+    "main.61c8f7ef.js.map": "/NickVelasco/static/js/main.61c8f7ef.js.map",
+    "787.4b24f717.chunk.js.map": "/NickVelasco/static/js/787.4b24f717.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8c9c444e.css",
+    "static/js/main.61c8f7ef.js"
+  ]
+}
