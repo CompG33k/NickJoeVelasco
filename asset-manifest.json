@@ -1,16 +1,21 @@
 {
   "files": {
     "main.css": "/NickJoeVelasco/static/css/main.8c9c444e.css",
-    "main.js": "/NickJoeVelasco/static/js/main.f38cfb9d.js",
+    "main.js": "/NickJoeVelasco/static/js/main.c9b92848.js",
     "static/js/787.4b24f717.chunk.js": "/NickJoeVelasco/static/js/787.4b24f717.chunk.js",
+    "static/media/pizza.JPG": "/NickJoeVelasco/static/media/pizza.0c9687d580779fd29bc8.JPG",
+    "static/media/NickHiking.JPG": "/NickJoeVelasco/static/media/NickHiking.85522a3379c11b90788d.JPG",
     "static/media/NickJoeVelasco.png": "/NickJoeVelasco/static/media/NickJoeVelasco.2e6cc61863652c66aa49.png",
+    "static/media/NickVelascoMotorcycle.png": "/NickJoeVelasco/static/media/NickVelascoMotorcycle.728b6bf17273e0bf7601.png",
+    "static/media/RoboticArmSoftware.png": "/NickJoeVelasco/static/media/RoboticArmSoftware.5ee0ce606e2a893839d1.png",
+    "static/media/KretekInternational.png": "/NickJoeVelasco/static/media/KretekInternational.e9333d5dc95e2dadb5e7.png",
     "index.html": "/NickJoeVelasco/index.html",
     "main.8c9c444e.css.map": "/NickJoeVelasco/static/css/main.8c9c444e.css.map",
-    "main.f38cfb9d.js.map": "/NickJoeVelasco/static/js/main.f38cfb9d.js.map",
+    "main.c9b92848.js.map": "/NickJoeVelasco/static/js/main.c9b92848.js.map",
     "787.4b24f717.chunk.js.map": "/NickJoeVelasco/static/js/787.4b24f717.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8c9c444e.css",
-    "static/js/main.f38cfb9d.js"
+    "static/js/main.c9b92848.js"
   ]
 }
