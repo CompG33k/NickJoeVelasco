@@ -59,7 +59,7 @@ const about = {
   message:
     "My name is Nick Joe Velasco. I’m a graduate of California State University class of 2011 with a degree in Computer Science. I'm most passionate about giving back to the community, and my goal is to pursue this passion within the field of software engineering. In my free time I like working on personal projects and updating my knowledge in my field currently redis/kafka/webapi's/core/c# are at the top of my list.",
   //resume: "https://docs.google.com/document/d/13_PWdhThMr6roxb-UFiJj4YAFOj8e_bv3Vx9UHQdyBQ/edit?usp=sharing",
-  resume : "https://github.com/CompG33k/NickJoeVelasco/blob/main/src/editable-stuff/NickVelascoResume.pdf",
+  resume : "https://github.com/CompG33k/NickJoeVelasco/blob/gh-pages/NickVelascoResume.pdf",
 };
 
 // PROJECTS SECTION
