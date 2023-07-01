@@ -14,11 +14,12 @@ const mainBody = {
     {
       image: "fa-github",
       url: "https://github.com/CompG33k",
-    },
-    {
-      image: "fa-facebook",
-      url: "https://www.facebook.com/nick.velasco/",
     }
+    // ,
+    // {
+    //   image: "fa-facebook",
+    //   url: "https://www.facebook.com/nick.velasco/",
+    // }
     // ,
     // {
     //   image: "fa-instagram",
