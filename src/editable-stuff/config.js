@@ -9,7 +9,7 @@ const mainBody = {
   firstName: "Nick",
   middleName: "Joe",
   lastName: "Velasco",
-  message: " Passionate about changing the world with technology. ",
+  message: " Passionate about changing the world with technology along with pizza and motorcycles !!!",
   icons: [
     {
       image: "fa-github",
@@ -56,11 +56,17 @@ const about = {
   show: true,
   heading: "About Me",
   imageLink: require("../editable-stuff/NickJoeVelasco.png"),
-  imageSize: 375,
+  imageSize: 365,
+  // imageSize: {
+  //   width:"615",
+  //   height:"450"
+  // },
   message:
-  "My name is Nick Joe velasco. I’m graduated as of 2011 from California State University of Long Beach with a degree in Computer Science.  Full stack developer with proven experience in building scalable and robust applications;  Almost 10+ years of professional Application Development Experience. In my free time I like to work on my personal projects and expand my professional knowledge.",
+  "I am Nick Joe Velasco, a Full Stack Developer with a degree in Computer Science from California State University, Long Beach, graduating in 2011. With over 10 years of professional application development experience, I have gained expertise in building scalable and robust applications. Currently, I am employed as a Software Engineer III at JPMorgan Chase & Co., where I continuously challenge and enhance my skills in full stack development. My areas of proficiency include the .NET framework, C#, Kafka, Redis, microservices, WebAPI, coding, database design, and development.",
   //resume: "https://docs.google.com/document/d/13_PWdhThMr6roxb-UFiJj4YAFOj8e_bv3Vx9UHQdyBQ/edit?usp=sharing",
-  resume : "https://github.com/CompG33k/NickJoeVelasco/blob/gh-pages/NickVelascoResume.pdf",
+  //resume: "https://github.com/CompG33k/NickJoeVelasco/blob/gh-pages/NickVelascoResume.pdf"
+  resume:"https://drive.google.com/file/d/1oqInMcg5t03uuSACrUKZsX8YpdK49vAD/view?usp=sharing"
+  //resume : "https://drive.google.com/viewerng/viewer?url=https://github.com/CompG33k/NickJoeVelasco/blob/gh-pages/NickVelascoResume.pdf?pid=explorer&efh=false&a=v&chrome=false&embedded=true",
 };
 
 // PROJECTS SECTION
@@ -78,24 +84,29 @@ const repos = {
 
 // Leadership SECTION
 const leadership = {
-  show: false,
+  show: true,
   heading: "Leadership",
   message:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae auctor eu augue ut lectus arcu bibendum at varius. Libero justo laoreet sit amet cursus sit amet. Imperdiet dui accumsan sit amet nulla facilisi morbi. At auctor urna nunc id. Iaculis urna id volutpat lacus laoreet non curabitur gravida. Et magnis dis parturient montes nascetur ridiculus mus mauris. In nisl nisi scelerisque eu ultrices vitae auctor. Mattis nunc sed blandit libero volutpat sed cras ornare. Pulvinar neque laoreet suspendisse interdum consectetur libero.",
   images: [
     { 
-      img: require("../editable-stuff/NickJoeVelasco.png"), 
-      label: "First slide label", 
+      img: require("../editable-stuff/NickVelascoMotorcycle.png"), 
+      label: "Passion for Motorcycles!!", 
       paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum." 
     },
     { 
-      img: require("../editable-stuff/NickJoeVelasco.png"), 
-      label: "Second slide label", 
+      img: require("../editable-stuff/pizza.JPG"), 
+      label: "I LOVE PIZZA!!", 
+      paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum." 
+    },
+    { 
+      img: require("../editable-stuff/NickHiking.JPG"), 
+      label: "Outdoors", 
       paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum." 
     },
   ],
   imageSize: {
-    width:"615",
+    width:"415",
     height:"450"
   }
 };
@@ -108,9 +119,11 @@ const skills = {
     { name: "Microsoft .NET/.NET Core framework and C#", value: 90 },
     { name: "SQL/oracle", value: 90 },
     { name: "Kafka/Redis", value: 75 },
-    { name: "WPF/Asp core", value: 90 }, 
+    { name: "WPF/Asp core/", value: 90 }, 
+    { name: "Java/Aurora", value: 50 },
+    { name: "React", value: 10 },
     { name: "Python", value: 20 },
-    { name: "React", value: 20 },
+    
   ],
   softSkills: [
     { name: "Goal-Oriented", value: 80 },
@@ -121,7 +134,6 @@ const skills = {
     { name: "Empathy", value: 90 },
     { name: "Organization", value: 70 },
     { name: "Creativity", value: 90 },
-    { name: "Purple/Monkey", value: 100 },
   ],
 };
 
@@ -130,24 +142,39 @@ const getInTouch = {
   show: true,
   heading: "Get In Touch",
   message:
-    "I'm currently looking for full-time Senior Software Engineering opportunities! If you know of any positions available, if you have any questions, or if you just want to say hi, please feel free to email me at",
+    "I'm always looking for next opportunity; Lead/Senior Software Engineering opportunities! If you know of any positions available (preferably remote/consider hybrid), if you have any questions, or if you just want to say hi, please feel free to email me at",
   email: "N.J.Velasco@live.com",
 };
 
 const experiences = {
-  show: false,
-  heading: "Experiences",
+  show: true,
+  heading: "Experience",
   data: [
-    // {
-    //   role: 'Software Engineer',// Here Add Company Name
-    //   companylogo: require('../assets/img/dell.png'),
-    //   date: 'June 2018 – Present',
-    // },
-    // {
-    //   role: 'Front-End Developer',
-    //   companylogo: require('../assets/img/boeing.png'),
-    //   date: 'May 2017 – May 2018',
-    // },
+    {
+      role:'Software Engineer III (AkA. Senior Associate)',
+      company: 'JPMorgan Chase & Co.',// Here Add Company Name
+      companylogo: require('../assets/img/JpMorganNChase.png'),
+      date: 'NOV 2020 – Present',
+      //message:"BOB",
+    },
+    {
+      role: 'Full Stack Software Engineer (Lead)',
+      company: 'Resillion (formerly Eurofins Digital Media Services)',// Here Add Company Name
+      companylogo: require('../assets/img/Resillion.png'),
+      date: 'Sep 2017 – Apr 2019',
+    },
+    {
+      role: 'Full Stack .NET Developer',
+      company: 'Kretek International Inc.',// Here Add Company Name
+      companylogo: require('../assets/img/KretekInternational.png'),
+      date: 'Dec 2011 – May 2017',
+    },
+    {
+      role: 'Game Programmer',
+      company: 'Robotic Arm Software',// Here Add Company Name
+      companylogo: require('../assets/img/RoboticArmSoftware.png'),
+      date: 'Aug 2011 – Oct 2011 (Contract/Junior)',
+    },
   ]
 }
 
