@@ -58,7 +58,7 @@ const about = {
   imageLink: require("../editable-stuff/NickJoeVelasco.png"),
   imageSize: 375,
   message:
-    "My name is Nick Joe Velasco. I’m a graduate of California State University class of 2011 with a degree in Computer Science. I'm most passionate about giving back to the community, and my goal is to pursue this passion within the field of software engineering. In my free time I like working on personal projects and updating my knowledge in my field currently redis/kafka/webapi's/core/c# are at the top of my list.",
+  "My name is Nick Joe velasco. I’m graduated as of 2011 from California State University of Long Beach with a degree in Computer Science.  Full stack developer with proven experience in building scalable and robust applications;  Almost 10+ years of professional Application Development Experience. In my free time I like to work on my personal projects and expand my professional knowledge.",
   //resume: "https://docs.google.com/document/d/13_PWdhThMr6roxb-UFiJj4YAFOj8e_bv3Vx9UHQdyBQ/edit?usp=sharing",
   resume : "https://github.com/CompG33k/NickJoeVelasco/blob/gh-pages/NickVelascoResume.pdf",
 };
@@ -72,7 +72,7 @@ const repos = {
   show: true,
   heading: "Recent Projects",
   gitHubUsername: "CompG33k", //i.e."johnDoe12Gh"
-  reposLength: 10,
+  reposLength: 6,
   specificRepos: [],
 };
 
@@ -105,14 +105,12 @@ const skills = {
   show: true,
   heading: "Skills",
   hardSkills: [
-    { name: "Python", value: 90 },
-    { name: "SQL", value: 75 },
-    { name: "Data Structures", value: 85 },
-    { name: "C/C++", value: 65 },
-    { name: "JavaScript", value: 90 },
-    { name: "React", value: 65 },
-    { name: "HTML/CSS", value: 55 },
-    { name: "C#", value: 80 },
+    { name: "Microsoft .NET/.NET Core framework and C#", value: 90 },
+    { name: "SQL/oracle", value: 90 },
+    { name: "Kafka/Redis", value: 75 },
+    { name: "WPF/Asp core", value: 90 }, 
+    { name: "Python", value: 20 },
+    { name: "React", value: 20 },
   ],
   softSkills: [
     { name: "Goal-Oriented", value: 80 },
@@ -123,6 +121,7 @@ const skills = {
     { name: "Empathy", value: 90 },
     { name: "Organization", value: 70 },
     { name: "Creativity", value: 90 },
+    { name: "Purple/Monkey", value: 100 },
   ],
 };
 
