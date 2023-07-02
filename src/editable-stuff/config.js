@@ -62,7 +62,7 @@ const about = {
   //   height:"450"
   // },
   message:
-  "I am Nick Joe Velasco, a Full Stack Developer with a degree in Computer Science from California State University, Long Beach, graduating in 2011. With over 10 years of professional application development experience, I have gained expertise in building scalable and robust applications. Currently, I am employed as a Software Engineer III at JPMorgan Chase & Co., where I continuously challenge and enhance my skills in full stack development. My areas of proficiency include the .NET framework, C#, Kafka, Redis, microservices, WebAPI, coding, database design, and development.",
+  "I am Nick Joe Velasco, a Full Stack Developer with a B.S. degree in Computer Science from California State University, Long Beach, graduating in 2011. With over 10 years of professional application development experience, I have gained expertise in building scalable and robust applications. Currently, I am employed as a Software Engineer III at JPMorgan Chase & Co., where I continuously challenge and enhance my skills in full stack development. My areas of proficiency include the .NET framework, C#, Kafka, Redis, microservices, WebAPI, coding, database design, and development.",
   //resume: "https://docs.google.com/document/d/13_PWdhThMr6roxb-UFiJj4YAFOj8e_bv3Vx9UHQdyBQ/edit?usp=sharing",
   //resume: "https://github.com/CompG33k/NickJoeVelasco/blob/gh-pages/NickVelascoResume.pdf"
   resume:"https://drive.google.com/file/d/1oqInMcg5t03uuSACrUKZsX8YpdK49vAD/view?usp=sharing"
@@ -116,11 +116,11 @@ const skills = {
   show: true,
   heading: "Skills",
   hardSkills: [
-    { name: "Microsoft .NET/.NET Core framework and C#", value: 90 },
-    { name: "SQL/oracle", value: 90 },
-    { name: "Kafka/Redis", value: 75 },
-    { name: "WPF/Asp core/", value: 90 }, 
-    { name: "Java/Aurora", value: 50 },
+    { name: "Microsoft .NET /.NET Core framework /C#", value: 90 },
+    { name: "SQL /oracle", value: 90 },
+    { name: "Kafka /Redis", value: 75 },
+    { name: "Microservices /WebApi /WPF", value: 90 }, 
+    { name: "Java /Aurora", value: 50 },
     { name: "React", value: 10 },
     { name: "Python", value: 20 },
     
@@ -145,7 +145,7 @@ const getInTouch = {
     "I'm always looking for next opportunity; Lead/Senior Software Engineering opportunities! If you know of any positions available (preferably remote/consider hybrid), if you have any questions, or if you just want to say hi, please feel free to email me at",
   email: "N.J.Velasco@live.com",
 };
-
+const moment = require('moment');
 const experiences = {
   show: true,
   heading: "Experience",
@@ -154,33 +154,33 @@ const experiences = {
       role:'Software Engineer III (AkA. Senior Associate)',
       company: 'JPMorgan Chase & Co.',// Here Add Company Name
       companylogo: require('../assets/img/JpMorganNChase.png'),
-      date: 'NOV 2020 – Present',
-      //message:"BOB",
+      date: 'NOV 2020 – Present (2 yrs 9 mos)',
+      //message: (moment().year() - 2020) +"yrs " + (moment().year() - 2020) + "mos",
     },
     {
       role: 'Full Stack Software Engineer (Lead)',
       company: 'Resillion (formerly Eurofins Digital Media Services)',// Here Add Company Name
       companylogo: require('../assets/img/Resillion.png'),
-      date: 'Sep 2017 – Apr 2019',
+      date: 'Sep 2017 – Apr 2019 (1 yr 8 mos)',
     },
     {
       role: 'Full Stack .NET Developer',
       company: 'Kretek International Inc.',// Here Add Company Name
       companylogo: require('../assets/img/KretekInternational.png'),
-      date: 'Dec 2011 – May 2017',
+      date: 'Dec 2011 – May 2017  (5 yr 6 mos)',
     },
     {
       role: 'Game Programmer',
       company: 'Robotic Arm Software',// Here Add Company Name
       companylogo: require('../assets/img/RoboticArmSoftware.png'),
-      date: 'Aug 2011 – Oct 2011 (Contract/Junior)',
+      date: 'Aug 2011 – Oct 2011 (3 mos Contract)',
     },
   ]
 }
 
 // Blog SECTION
-// const blog = {
-//   show: false,
-// };
+//  const blog = {
+//    show: true,
+//  };
 
 export { navBar, mainBody, about, repos, skills, leadership, getInTouch, experiences };
