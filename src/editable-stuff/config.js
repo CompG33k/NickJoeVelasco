@@ -9,7 +9,7 @@ const mainBody = {
   firstName: "Nick",
   middleName: "Joe",
   lastName: "Velasco",
-  message: " Passionate about changing the world with technology along with pizza and motorcycles !!!",
+  message: " Passionate about changing the world with technology!! P.S. Pizza and Motorcycles also cool!!",
   icons: [
     {
       image: "fa-github",
