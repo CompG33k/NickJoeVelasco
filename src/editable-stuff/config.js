@@ -78,7 +78,7 @@ const repos = {
   show: true,
   heading: "Recent Projects",
   gitHubUsername: "CompG33k", //i.e."johnDoe12Gh"
-  reposLength: 6,
+  reposLength: 12,
   specificRepos: [],
 };
 
