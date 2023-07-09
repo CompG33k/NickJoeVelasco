@@ -146,6 +146,38 @@ const getInTouch = {
   email: "N.J.Velasco@live.com",
 };
 const moment = require('moment');
+function getMonths(){
+  var startMonth = new Date('11-01-2020').getMonth() + 1;
+  var todayMonth = new Date().getMonth() + 1;
+  //console.log('todayMonth ' + todayMonth);
+  //console.log('startMonth ' + startMonth);
+  if( (todayMonth + 1) < 12)
+  {
+      return todayMonth + 1 ;
+  }
+
+  if(startMonth - todayMonth == 0){
+    return   startMonth - todayMonth; 
+  }
+    
+  return 1;
+}
+
+function getTodayYears(){
+  var todayYear = new Date().getFullYear();
+  var startDateYear = new Date('11-01-2020').getFullYear();
+  //console.log('todayMonth ' + todayMonth);
+  console.log('todayYear ' + todayYear);
+  console.log('startDateYear ' + startDateYear);
+  console.log('CALC  ' + ( (todayYear  - startDateYear)  ) );
+  var startMonth = (new Date().getMonth() + 1);
+  if( startMonth == 11 || startMonth == 12)
+  {
+    return todayYear - startDateYear;
+  }
+  return (todayYear - startDateYear) -1;
+  
+}
 const experiences = {
   show: true,
   heading: "Experience",
@@ -154,8 +186,12 @@ const experiences = {
       role:'Software Engineer III (AkA. Senior Associate)',
       company: 'JPMorgan Chase & Co.',// Here Add Company Name
       companylogo: require('../assets/img/JpMorganNChase.png'),
-      date: 'NOV 2020 – Present (2 yrs 9 mos)',
-      //message: (moment().year() - 2020) +"yrs " + (moment().year() - 2020) + "mos",
+      date: 'NOV 2020 – Present ('+ getTodayYears() + ' yrs ' + getMonths() + ' mos)',
+    
+      // message:     
+      //    '( ' + getTodayYears() + ' yrs '+
+      //         getMonths() + ' mo )'
+    
     },
     {
       role: 'Full Stack Software Engineer (Lead)',
