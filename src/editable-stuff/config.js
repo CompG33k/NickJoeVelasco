@@ -62,11 +62,9 @@ const about = {
   //   height:"450"
   // },
   message:
-  "I am Nick Joe Velasco, a Full Stack Developer with a B.S. degree in Computer Science from California State University, Long Beach, graduating in 2011. With over 10 years of professional application development experience, I have gained expertise in building scalable and robust applications. Currently, I am employed as a Software Engineer III at JPMorgan Chase & Co., where I continuously challenge and enhance my skills in full stack development. My areas of proficiency include the .NET framework, C#, Kafka, Redis, microservices, WebAPI, coding, database design, and development.",
-  //resume: "https://docs.google.com/document/d/13_PWdhThMr6roxb-UFiJj4YAFOj8e_bv3Vx9UHQdyBQ/edit?usp=sharing",
-  //resume: "https://github.com/CompG33k/NickJoeVelasco/blob/gh-pages/NickVelascoResume.pdf"
-  resume:"https://drive.google.com/file/d/1oqInMcg5t03uuSACrUKZsX8YpdK49vAD/view?usp=sharing"
-  //resume : "https://drive.google.com/viewerng/viewer?url=https://github.com/CompG33k/NickJoeVelasco/blob/gh-pages/NickVelascoResume.pdf?pid=explorer&efh=false&a=v&chrome=false&embedded=true",
+  "I am Nick Joe Velasco, a Senior Software Engineer with a B.S. degree in Computer Science from California State University, Long Beach, graduated in 2011. With over 10+ years of professional application development experience, I have gained expertise in building scalable and robust applications.	Latest role as a Software Engineer III at JPMorgan Chase & Co. where I continuously challenge and enhance my skills as we migrated a monolithic environment to a microservice based architecture. My areas of proficiency include the Asp.Net, Core, .NET framework, C#, Kafka, Redis, microservices, WebAPI, SQL/MySql design, and development.",
+  //resume:"https://drive.google.com/file/d/1oqInMcg5t03uuSACrUKZsX8YpdK49vAD/view?usp=sharing"
+  resume:"https://drive.google.com/file/d/11QvbAgFZZxsXexaX46TnA-OeMz7mfEDl/view?usp=sharing"
 };
 
 // PROJECTS SECTION
