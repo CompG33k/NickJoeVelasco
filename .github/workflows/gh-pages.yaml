@@ -6,15 +6,19 @@ on:
 
 jobs:
   build:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup Node
+      - name: Setup Node 18
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 18.13.0
+          check-latest: true
+
+      - name: Downgrade npm to v8
+        run: npm install -g npm@8
 
       - name: Install dependencies
         run: npm ci
@@ -26,4 +30,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build   # change to ./dist for Vite
+          publish_dir: ./build   # or ./dist for Vite
