@@ -62,7 +62,8 @@ const about = {
   //   height:"450"
   // },
   message:
-  "I am Nick Joe Velasco, a Senior Software Engineer with a B.S. degree in Computer Science from California State University, Long Beach, graduated in 2011. With over 10+ years of professional application development experience, I have gained expertise in building scalable and robust applications.	Latest role as a Software Engineer III at JPMorgan Chase & Co. where I continuously challenge and enhance my skills as we migrated a monolithic environment to a microservice based architecture. My areas of proficiency include the Asp.Net, Core, .NET framework, C#, Kafka, Redis, microservices, WebAPI, SQL/MySql design, and development.",
+  "I am Nick Joe Velasco, a Senior Software Engineer with a B.S. in Computer Science from California State University, Long Beach, and over a decade of hands-on experience in designing and building modern, scalable applications.\n\nMost recently, I served as a Software Engineer III at JPMorgan Chase & Co., where I contributed to the transformation of large-scale legacy systems into a distributed, microservices-driven architecture. In this role, I worked across the full development lifecycle and partnered closely with cross-functional teams to deliver performant, reliable solutions at enterprise scale.\n\nMy technical strengths include ASP.NET, .NET Core, C#, microservices, Kafka, Redis, RESTful API development, and SQL/MySQL database design. I am passionate about building clean, maintainable systems and continuously enhancing my skills to stay aligned with modern engineering practices.",
+  //"I am Nick Joe Velasco, a Senior Software Engineer with a B.S. degree in Computer Science from California State University, Long Beach. With over 10 years of professional application development experience, I have gained expertise in building scalable and robust applications.	Latest role as a Software Engineer III at JPMorgan Chase & Co. where I continuously challenge and enhance my skills as we migrated a monolithic environment to a microservice based architecture. My areas of proficiency include the Asp.Net, Core, .NET framework, C#, Kafka, Redis, microservices, WebAPI, SQL/MySql design, and development.",
   //resume:"https://drive.google.com/file/d/1oqInMcg5t03uuSACrUKZsX8YpdK49vAD/view?usp=sharing"
   resume:"https://drive.google.com/file/d/11QvbAgFZZxsXexaX46TnA-OeMz7mfEDl/view?usp=sharing"
 };
@@ -184,7 +185,8 @@ const experiences = {
       role:'Software Engineer III (AkA. Senior Associate)',
       company: 'JPMorgan Chase & Co.',// Here Add Company Name
       companylogo: require('../assets/img/JpMorganNChase.png'),
-      date: 'NOV 2020 – Present ('+ getTodayYears() + ' yrs ' + getMonths() + ' mos)',
+      date: 'Nov. 2020 - Mar. 2024 (3 yrs 5 mos)'
+      //date: 'NOV 2020 – Present ('+ getTodayYears() + ' yrs ' + getMonths() + ' mos)',
     
       // message:     
       //    '( ' + getTodayYears() + ' yrs '+
@@ -195,19 +197,19 @@ const experiences = {
       role: 'Full Stack Software Engineer (Lead)',
       company: 'Resillion (formerly Eurofins Digital Media Services)',// Here Add Company Name
       companylogo: require('../assets/img/Resillion.png'),
-      date: 'Sep 2017 – Apr 2019 (1 yr 8 mos)',
+      date: 'Sep. 2017 – Apr 2019 (1 yr 8 mos)',
     },
     {
       role: 'Full Stack .NET Developer',
       company: 'Kretek International Inc.',// Here Add Company Name
       companylogo: require('../assets/img/KretekInternational.png'),
-      date: 'Dec 2011 – May 2017  (5 yr 6 mos)',
+      date: 'Dec. 2011 – May. 2017  (5 yr 6 mos)',
     },
     {
       role: 'Game Programmer',
       company: 'Robotic Arm Software',// Here Add Company Name
       companylogo: require('../assets/img/RoboticArmSoftware.png'),
-      date: 'Aug 2011 – Oct 2011 (3 mos Contract)',
+      date: 'Aug. 2011 – Oct. 2011 (3 mos Contract)',
     },
   ]
 }
