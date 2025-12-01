@@ -10,11 +10,10 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-
-      - name: Setup Node 18
-        uses: actions/setup-node@v4
+      - name: Use Node.js 18.14.0
+        uses: actions/setup-node@v3
         with:
-          node-version: 18.13.0
+          node-version: 18.14.0
           check-latest: true
 
       - name: Downgrade npm to v8
