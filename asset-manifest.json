@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/NickJoeVelasco/static/css/main.8c9c444e.css",
-    "main.js": "/NickJoeVelasco/static/js/main.3ccda5dd.js",
-    "static/js/787.4b24f717.chunk.js": "/NickJoeVelasco/static/js/787.4b24f717.chunk.js",
+    "main.css": "/NickJoeVelasco/static/css/main.d6891a1d.css",
+    "main.js": "/NickJoeVelasco/static/js/main.e8732e85.js",
+    "static/js/453.5cd421d3.chunk.js": "/NickJoeVelasco/static/js/453.5cd421d3.chunk.js",
     "static/media/pizza.JPG": "/NickJoeVelasco/static/media/pizza.0c9687d580779fd29bc8.JPG",
     "static/media/NickHiking.JPG": "/NickJoeVelasco/static/media/NickHiking.85522a3379c11b90788d.JPG",
     "static/media/NickJoeVelasco.png": "/NickJoeVelasco/static/media/NickJoeVelasco.2e6cc61863652c66aa49.png",
@@ -10,12 +10,12 @@
     "static/media/RoboticArmSoftware.png": "/NickJoeVelasco/static/media/RoboticArmSoftware.5ee0ce606e2a893839d1.png",
     "static/media/KretekInternational.png": "/NickJoeVelasco/static/media/KretekInternational.e9333d5dc95e2dadb5e7.png",
     "index.html": "/NickJoeVelasco/index.html",
-    "main.8c9c444e.css.map": "/NickJoeVelasco/static/css/main.8c9c444e.css.map",
-    "main.3ccda5dd.js.map": "/NickJoeVelasco/static/js/main.3ccda5dd.js.map",
-    "787.4b24f717.chunk.js.map": "/NickJoeVelasco/static/js/787.4b24f717.chunk.js.map"
+    "main.d6891a1d.css.map": "/NickJoeVelasco/static/css/main.d6891a1d.css.map",
+    "main.e8732e85.js.map": "/NickJoeVelasco/static/js/main.e8732e85.js.map",
+    "453.5cd421d3.chunk.js.map": "/NickJoeVelasco/static/js/453.5cd421d3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8c9c444e.css",
-    "static/js/main.3ccda5dd.js"
+    "static/css/main.d6891a1d.css",
+    "static/js/main.e8732e85.js"
   ]
 }
