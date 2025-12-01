@@ -142,7 +142,7 @@ const getInTouch = {
   heading: "Get In Touch",
   message:
     "I'm always looking for next opportunity; Lead/Senior Software Engineering opportunities! If you know of any positions available (preferably remote/consider hybrid), if you have any questions, or if you just want to say hi, please feel free to email me at",
-  email: "N.J.Velasco@live.com",
+  email: "nvelasco.joe@gmail.com",
 };
 const moment = require('moment');
 function getMonths(){
