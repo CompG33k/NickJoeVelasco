@@ -41,7 +41,7 @@ const Navigation = React.forwardRef((props, ref) => {
         }`}
       expand="lg"
     >
-      <Navbar.Brand className="navbar-brand" style={{ fontSize: '2rem', fontWeight: 'bold' }}  href={process.env.PUBLIC_URL + "/#home"}>
+      <Navbar.Brand className="navbar-brand"  href={process.env.PUBLIC_URL + "/#home"}>
         {`  ${mainBody.firstName} J. ${mainBody.lastName}  `}
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggler" />
