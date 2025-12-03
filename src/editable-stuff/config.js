@@ -118,10 +118,8 @@ const skills = {
     { name: "Microsoft .NET /.NET Core framework /C#", value: 90 },
     { name: "SQL /oracle", value: 90 },
     { name: "Kafka /Redis", value: 75 },
-    { name: "Microservices /WebApi /WPF", value: 90 }, 
-    { name: "Java /Aurora", value: 50 },
-    { name: "React", value: 10 },
-    { name: "Python", value: 20 },
+    { name: "Microservices /WebApi /WPF", value: 90 }
+   // { name: "Python", value: 20 },
     
   ],
   softSkills: [
@@ -130,9 +128,7 @@ const skills = {
     { name: "Positivity", value: 75 },
     { name: "Adaptability", value: 85 },
     { name: "Problem Solving", value: 75 },
-    { name: "Empathy", value: 90 },
-    { name: "Organization", value: 70 },
-    { name: "Creativity", value: 90 },
+    { name: "Troubleshooter", value: 90 },
   ],
 };
 
