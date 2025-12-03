@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/NickJoeVelasco/static/css/main.d6891a1d.css",
-    "main.js": "/NickJoeVelasco/static/js/main.d82ab2c5.js",
+    "main.js": "/NickJoeVelasco/static/js/main.d951ee67.js",
     "static/js/453.5cd421d3.chunk.js": "/NickJoeVelasco/static/js/453.5cd421d3.chunk.js",
     "static/media/pizza.JPG": "/NickJoeVelasco/static/media/pizza.0c9687d580779fd29bc8.JPG",
     "static/media/NickHiking.JPG": "/NickJoeVelasco/static/media/NickHiking.85522a3379c11b90788d.JPG",
@@ -11,11 +11,11 @@
     "static/media/KretekInternational.png": "/NickJoeVelasco/static/media/KretekInternational.e9333d5dc95e2dadb5e7.png",
     "index.html": "/NickJoeVelasco/index.html",
     "main.d6891a1d.css.map": "/NickJoeVelasco/static/css/main.d6891a1d.css.map",
-    "main.d82ab2c5.js.map": "/NickJoeVelasco/static/js/main.d82ab2c5.js.map",
+    "main.d951ee67.js.map": "/NickJoeVelasco/static/js/main.d951ee67.js.map",
     "453.5cd421d3.chunk.js.map": "/NickJoeVelasco/static/js/453.5cd421d3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d6891a1d.css",
-    "static/js/main.d82ab2c5.js"
+    "static/js/main.d951ee67.js"
   ]
 }
