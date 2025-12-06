@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/NickJoeVelasco/static/css/main.d6891a1d.css",
-    "main.js": "/NickJoeVelasco/static/js/main.d951ee67.js",
-    "static/js/453.5cd421d3.chunk.js": "/NickJoeVelasco/static/js/453.5cd421d3.chunk.js",
-    "static/media/pizza.JPG": "/NickJoeVelasco/static/media/pizza.0c9687d580779fd29bc8.JPG",
-    "static/media/NickHiking.JPG": "/NickJoeVelasco/static/media/NickHiking.85522a3379c11b90788d.JPG",
-    "static/media/NickJoeVelasco.png": "/NickJoeVelasco/static/media/NickJoeVelasco.2e6cc61863652c66aa49.png",
-    "static/media/NickVelascoMotorcycle.png": "/NickJoeVelasco/static/media/NickVelascoMotorcycle.728b6bf17273e0bf7601.png",
-    "static/media/RoboticArmSoftware.png": "/NickJoeVelasco/static/media/RoboticArmSoftware.5ee0ce606e2a893839d1.png",
-    "static/media/KretekInternational.png": "/NickJoeVelasco/static/media/KretekInternational.e9333d5dc95e2dadb5e7.png",
-    "index.html": "/NickJoeVelasco/index.html",
-    "main.d6891a1d.css.map": "/NickJoeVelasco/static/css/main.d6891a1d.css.map",
-    "main.d951ee67.js.map": "/NickJoeVelasco/static/js/main.d951ee67.js.map",
-    "453.5cd421d3.chunk.js.map": "/NickJoeVelasco/static/js/453.5cd421d3.chunk.js.map"
+    "main.css": "./static/css/main.d6891a1d.css",
+    "main.js": "./static/js/main.94f1e4ca.js",
+    "static/js/453.505a0133.chunk.js": "./static/js/453.505a0133.chunk.js",
+    "static/media/pizza.JPG": "./static/media/pizza.0c9687d580779fd29bc8.JPG",
+    "static/media/NickHiking.JPG": "./static/media/NickHiking.85522a3379c11b90788d.JPG",
+    "static/media/NickJoeVelasco.png": "./static/media/NickJoeVelasco.2e6cc61863652c66aa49.png",
+    "static/media/NickVelascoMotorcycle.png": "./static/media/NickVelascoMotorcycle.728b6bf17273e0bf7601.png",
+    "static/media/RoboticArmSoftware.png": "./static/media/RoboticArmSoftware.5ee0ce606e2a893839d1.png",
+    "static/media/KretekInternational.png": "./static/media/KretekInternational.e9333d5dc95e2dadb5e7.png",
+    "index.html": "./index.html",
+    "main.d6891a1d.css.map": "./static/css/main.d6891a1d.css.map",
+    "main.94f1e4ca.js.map": "./static/js/main.94f1e4ca.js.map",
+    "453.505a0133.chunk.js.map": "./static/js/453.505a0133.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d6891a1d.css",
-    "static/js/main.d951ee67.js"
+    "static/js/main.94f1e4ca.js"
   ]
 }
