@@ -5,7 +5,7 @@
 
   <p align="center">
     It is a personal static website/portfolio template hosted with GitHub Pages, built to showcase my recent projects. Site URL / Demo: 
-    <a href="https://compg33k.github.io/NickJoeVelasco/">compg33k.github.io/NickJoeVelasco</a>
+    <a href="https://nickjvelasco.com">https://nickjvelasco.com</a>
     <br />
     <br />
     <a href="https://github.com/CompG33k">About Me</a>
