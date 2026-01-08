@@ -4,37 +4,44 @@ const navBar = {
 };
 
 // Main Body SECTION
+// const mainBody = {
+//   gradientColors: "#4484ce, #1ad7c0, #ff9b11, #9b59b6, #ff7f7f, #ecf0f1",
+//   firstName: "Nick",
+//   middleName: "Joe",
+//   lastName: "Velasco",
+//   message: " Passionate about changing the world with technology!! P.S. Pizza and Motorcycles also cool!!",
+//   icons: [
+//     {
+//       image: "fa-github",
+//       url: "https://github.com/CompG33k",
+//     },
+//     {
+//       image: "fa-linkedin",
+//       url: "https://www.linkedin.com/in/nickvelasco/",
+//     },
+//     {
+//       image: "fa-globe",
+//       url: "https://nickjvelasco.com",
+//     },
+//   ],
+// };
+// Main Body SECTION (Hero)
 const mainBody = {
-  gradientColors: "#4484ce, #1ad7c0, #ff9b11, #9b59b6, #ff7f7f, #ecf0f1",
+  gradientColors: "#0f2027, #203a43, #2c5364",
   firstName: "Nick",
   middleName: "Joe",
   lastName: "Velasco",
-  message: " Passionate about changing the world with technology!! P.S. Pizza and Motorcycles also cool!!",
+
+  // Hero headline (replaces the playful message)
+  message:
+    "Senior Software Engineer | C# / .NET | Backend & API Specialist | Enterprise Systems",
+
   icons: [
-    {
-      image: "fa-github",
-      url: "https://github.com/CompG33k",
-    }
-    // ,
-    // {
-    //   image: "fa-facebook",
-    //   url: "https://www.facebook.com/nick.velasco/",
-    // }
-    // ,
-    // {
-    //   image: "fa-instagram",
-    //   url: "https://www.instagram.com/hashirshoaeb/",
-    // }
-    ,
-    {
-      image: "fa-linkedin",
-      url: "https://www.linkedin.com/in/nickvelasco/",
-    }
-    // ,
-    // {
-    //   image: "fa-twitter",
-    //   url: "https://www.twitter.com/hashirshoaeb/",
-    // },
+    { image: "fa-github", url: "https://github.com/CompG33k" },
+    { image: "fa-linkedin", url: "https://www.linkedin.com/in/nickvelasco/" },
+    { image: "fa-globe", url: "https://nickjvelasco.com" },
+    // Optional: email icon (only if your template supports it)
+    // { image: "fa-envelope", url: "mailto:nvelasco.joe@gmail.com" },
   ],
 };
 
@@ -121,15 +128,16 @@ const skills = {
     { name: "Microservices /WebApi /WPF", value: 90 }
    // { name: "Python", value: 20 },
     
-  ],
-  softSkills: [
-    { name: "Goal-Oriented", value: 80 },
-    { name: "Collaboration", value: 90 },
-    { name: "Positivity", value: 75 },
-    { name: "Adaptability", value: 85 },
-    { name: "Problem Solving", value: 75 },
-    { name: "Troubleshooter", value: 90 },
-  ],
+  ]
+  // ,
+  // softSkills: [
+  //   { name: "Goal-Oriented", value: 80 },
+  //   { name: "Collaboration", value: 90 },
+  //   { name: "Positivity", value: 75 },
+  //   { name: "Adaptability", value: 85 },
+  //   { name: "Problem Solving", value: 75 },
+  //   { name: "Troubleshooter", value: 90 },
+  // ],
 };
 
 // GET IN TOUCH SECTION
