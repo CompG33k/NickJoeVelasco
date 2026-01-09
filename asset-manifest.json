@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.d6891a1d.css",
-    "main.js": "/static/js/main.95cdd06c.js",
+    "main.js": "/static/js/main.71f03e9a.js",
     "static/js/453.505a0133.chunk.js": "/static/js/453.505a0133.chunk.js",
     "static/media/pizza.JPG": "/static/media/pizza.0c9687d580779fd29bc8.JPG",
     "static/media/NickHiking.JPG": "/static/media/NickHiking.85522a3379c11b90788d.JPG",
@@ -11,11 +11,11 @@
     "static/media/KretekInternational.png": "/static/media/KretekInternational.e9333d5dc95e2dadb5e7.png",
     "index.html": "/index.html",
     "main.d6891a1d.css.map": "/static/css/main.d6891a1d.css.map",
-    "main.95cdd06c.js.map": "/static/js/main.95cdd06c.js.map",
+    "main.71f03e9a.js.map": "/static/js/main.71f03e9a.js.map",
     "453.505a0133.chunk.js.map": "/static/js/453.505a0133.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d6891a1d.css",
-    "static/js/main.95cdd06c.js"
+    "static/js/main.71f03e9a.js"
   ]
 }
