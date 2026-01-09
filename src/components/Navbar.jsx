@@ -49,8 +49,8 @@ const Navigation = ({ onOpenResume }) => {
     >
       <Container>
         <Button
-                variant="light"
           className="navbar-brand"
+          variant="light"
           href="#home"
           onClick={(e) => {
             e.preventDefault();
@@ -128,6 +128,7 @@ const Navigation = ({ onOpenResume }) => {
             </Button>
 
             <Button
+              className="btn btn-dark"
               variant="light"
               href={`mailto:${getInTouch.email}?subject=Senior%20Software%20Engineer%20Opportunity`}
             >
