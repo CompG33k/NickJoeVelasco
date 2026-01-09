@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/static/css/main.da9c2fa2.css",
-    "main.js": "/static/js/main.981fbce2.js",
+    "main.js": "/static/js/main.fb2809be.js",
     "static/js/453.505a0133.chunk.js": "/static/js/453.505a0133.chunk.js",
     "static/media/pizza.JPG": "/static/media/pizza.0c9687d580779fd29bc8.JPG",
+    "static/media/NickJoeVelasco.png": "/static/media/NickJoeVelasco.e4b5b5edb7fb47c49eab.png",
     "static/media/NickHiking.JPG": "/static/media/NickHiking.85522a3379c11b90788d.JPG",
-    "static/media/NickJoeVelasco.png": "/static/media/NickJoeVelasco.2e6cc61863652c66aa49.png",
     "static/media/NickVelascoMotorcycle.png": "/static/media/NickVelascoMotorcycle.728b6bf17273e0bf7601.png",
     "static/media/RoboticArmSoftware.png": "/static/media/RoboticArmSoftware.5ee0ce606e2a893839d1.png",
     "static/media/KretekInternational.png": "/static/media/KretekInternational.e9333d5dc95e2dadb5e7.png",
     "index.html": "/index.html",
     "main.da9c2fa2.css.map": "/static/css/main.da9c2fa2.css.map",
-    "main.981fbce2.js.map": "/static/js/main.981fbce2.js.map",
+    "main.fb2809be.js.map": "/static/js/main.fb2809be.js.map",
     "453.505a0133.chunk.js.map": "/static/js/453.505a0133.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.da9c2fa2.css",
-    "static/js/main.981fbce2.js"
+    "static/js/main.fb2809be.js"
   ]
 }
