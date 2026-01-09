@@ -14,8 +14,8 @@ const mainBody = {
   middleName: "Joe",
   lastName: "Velasco",
   message:
-    "Senior Software Engineer | C# / .NET | Backend & API Specialist | Enterprise Systems",
-  icons: [
+  "Senior Software Engineer specializing in C#, .NET, backend APIs, and scalable enterprise systems",
+icons: [
     { image: "fa-github", url: "https://github.com/CompG33k" },
     { image: "fa-linkedin", url: "https://www.linkedin.com/in/nickvelasco/" },
     { image: "fa-globe", url: "https://nickjvelasco.com" },
@@ -30,9 +30,9 @@ const about = {
   heading: "About Me",
   imageLink: require("../editable-stuff/NickJoeVelasco.png"),
   imageSize: 365,
-  message:
-    "I am Nick Joe Velasco, a Senior Software Engineer with a B.S. in Computer Science from California State University, Long Beach, and over a decade of hands-on experience in designing and building modern, scalable applications.\n\nMost recently, I served as a Software Engineer III at JPMorgan Chase & Co., where I contributed to the transformation of large-scale legacy systems into a distributed, microservices-driven architecture. In this role, I worked across the full development lifecycle and partnered closely with cross-functional teams to deliver performant, reliable solutions at enterprise scale.\n\nMy technical strengths include ASP.NET, .NET Core, C#, microservices, Kafka, Redis, RESTful API development, and SQL/MySQL database design. I am passionate about building clean, maintainable systems and continuously enhancing my skills to stay aligned with modern engineering practices.",
-  resume:
+ message:
+  "I am Nick Joe Velasco, a Senior Software Engineer with over 10 years of professional experience designing, building, and maintaining high-performance backend systems and enterprise applications. I hold a B.S. in Computer Science from California State University, Long Beach and have worked across the full software development lifecycle in production-critical environments.\n\nMost recently, I served as a Software Engineer III at JPMorgan Chase & Co., where I contributed to the modernization of large-scale legacy platforms into distributed, microservices-based architectures. My work focused on building resilient backend services, RESTful APIs, and event-driven systems while collaborating closely with cross-functional teams to deliver secure, scalable solutions used at enterprise scale.\n\nMy technical expertise includes C#, ASP.NET, .NET Core, microservices architecture, Kafka, Redis, REST API development, and relational database design using SQL and MySQL. I am passionate about writing clean, maintainable code, improving system reliability, and continuously evolving my skills to align with modern backend and cloud-native engineering practices.",
+ resume:
     "https://drive.google.com/file/d/11QvbAgFZZxsXexaX46TnA-OeMz7mfEDl/view?usp=sharing",
 };
 
@@ -66,23 +66,27 @@ const leadership = {
   heading: "Leadership",
   message:
     "Leadership through ownership, mentorship, and technical excellence.",
-  images: [
-    {
-      img: require("../editable-stuff/NickVelascoMotorcycle.png"),
-      label: "Passion for Motorcycles",
-      paragraph: "Engineering discipline applies on and off the road.",
-    },
-    {
-      img: require("../editable-stuff/pizza.JPG"),
-      label: "I Love Pizza",
-      paragraph: "Because great engineering requires fuel.",
-    },
-    {
-      img: require("../editable-stuff/NickHiking.JPG"),
-      label: "Outdoors",
-      paragraph: "Balance, perspective, and problem solving.",
-    },
-  ],
+ images: [
+  {
+    img: require("../editable-stuff/NickVelascoMotorcycle.png"),
+    label: "Discipline & Focus",
+    paragraph:
+      "Motorcycling demands precision, preparation, and accountability—the same principles I apply when designing and maintaining reliable software systems.",
+  },
+  {
+    img: require("../editable-stuff/pizza.JPG"),
+    label: "Team Culture",
+    paragraph:
+      "I value collaboration and team culture, believing that strong relationships and shared moments help teams perform at their best.",
+  },
+  {
+    img: require("../editable-stuff/NickHiking.JPG"),
+    label: "Perspective & Problem Solving",
+    paragraph:
+      "Spending time outdoors helps me maintain balance, clarity, and perspective—qualities that support thoughtful decision-making and effective problem solving.",
+  },
+],
+
   imageSize: {
     width: "415",
     height: "450",
