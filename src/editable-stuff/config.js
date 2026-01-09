@@ -197,8 +197,16 @@ const experiences = {
 };
 
 // ===============================
-// EXPORTS
+// RESUME SECTION (Overlay Viewer)
 // ===============================
+const resumeSection = {
+  show: true,
+  heading: "Resume",
+  // PDF direct link is best (not Google Drive preview page)
+  // We'll generate it from your fileId in the component too.
+  fileId: "11QvbAgFZZxsXexaX46TnA-OeMz7mfEDl",
+};
+
 export {
   navBar,
   mainBody,
@@ -208,4 +216,5 @@ export {
   leadership,
   getInTouch,
   experiences,
+  resumeSection,
 };

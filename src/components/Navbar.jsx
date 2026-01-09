@@ -1,106 +1,18 @@
-// import React, { useState } from "react";
-// import { useScrollPosition } from "../hooks/useScrollPosition";
-// import useResizeObserver from "../hooks/useResizeObserver";
-// import Navbar from "react-bootstrap/Navbar";
-// import Nav from "react-bootstrap/Nav";
-// import { mainBody, repos, about, skills, experiences } from "../editable-stuff/config.js";
-// import { NavLink } from "./home/migration";
-
-// // Safely get offsetTop from a ref or a DOM element
-// const getOffsetTop = (refOrEl) => {
-//   const el = refOrEl?.current ?? refOrEl;
-//   return el?.offsetTop ?? 0;
-// };
-
-// const Navigation = React.forwardRef((props, ref) => {
-//   const [isTop, setIsTop] = useState(true);
-//   const [scrollPosition, setScrollPosition] = useState(0);
-
-//   const navbarMenuRef = React.useRef();
-//   const navbarDimensions = useResizeObserver(navbarMenuRef);
-//   const navBottom = navbarDimensions ? navbarDimensions.bottom : 0;
-
-//   useScrollPosition(
-//     ({ currPos }) => {
-//       if (!navbarDimensions) return;
-
-//       // ✅ SAFE: use helper (ref may be undefined during initial mount)
-//       const homeTop = getOffsetTop(ref);
-
-//       // If we can’t calculate yet, don’t crash
-//       // homeTop will be 0 if ref is not ready
-//       currPos.y + homeTop - navbarDimensions.bottom > 5
-//         ? setIsTop(true)
-//         : setIsTop(false);
-
-//       setScrollPosition(currPos.y);
-//     },
-//     [navBottom, navbarDimensions, ref]
-//   );
-
-//   React.useEffect(() => {
-//     if (!navbarDimensions) return;
-
-//     // ✅ SAFE: use helper
-//     const homeTop = getOffsetTop(ref);
-
-//     navBottom - scrollPosition >= homeTop ? setIsTop(false) : setIsTop(true);
-//   }, [navBottom, navbarDimensions, ref, scrollPosition]);
-
-//   return (
-//     <Navbar
-//       ref={navbarMenuRef}
-//       className={`px-3 fixed-top ${!isTop ? "navbar-white" : "navbar-transparent"}`}
-//       expand="lg"
-//     >
-//       <Navbar.Brand className="navbar-brand" href={process.env.PUBLIC_URL + "/#home"}>
-//         {`  ${mainBody.firstName} J. ${mainBody.lastName}  `}
-//       </Navbar.Brand>
-
-//       <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggler" />
-
-//       <Navbar.Collapse id="basic-navbar-nav">
-//         <Nav className="navbar-nav mr-auto">
-//           {experiences.show && (
-//             <NavLink className="nav-item lead" href={process.env.PUBLIC_URL + "/#experience"}>
-//               Experience
-//             </NavLink>
-//           )}
-
-//           {skills.show && (
-//             <NavLink className="nav-item lead" href={process.env.PUBLIC_URL + "/#skills"}>
-//               Skills
-//             </NavLink>
-//           )}
-
-//           {repos.show && (
-//             <NavLink className="nav-item lead" href={process.env.PUBLIC_URL + "/#projects"}>
-//               Projects
-//             </NavLink>
-//           )}
-
-//           <NavLink
-//             className="nav-item lead"
-//             href={about.resume}
-//             target="_blank"
-//             rel="noreferrer noopener"
-//           >
-//             Resume
-//           </NavLink>
-//         </Nav>
-//       </Navbar.Collapse>
-//     </Navbar>
-//   );
-// });
-
-// export default Navigation;
 import React, { useEffect, useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 
-import { mainBody, about, repos, skills, experiences, getInTouch } from "../editable-stuff/config.js";
+import {
+  mainBody,
+  about,
+  repos,
+  skills,
+  experiences,
+  getInTouch,
+  resumeSection,
+} from "../editable-stuff/config";
 
 function scrollToId(id) {
   const el = document.getElementById(id);
@@ -109,11 +21,11 @@ function scrollToId(id) {
   const nav = document.querySelector("nav.navbar");
   const navH = nav?.offsetHeight ?? 72;
 
-  const y = el.getBoundingClientRect().top + window.pageYOffset - navH + 8;
+  const y = el.getBoundingClientRect().top + window.pageYOffset - navH - 6;
   window.scrollTo({ top: y, behavior: "smooth" });
 }
 
-const Navigation = () => {
+const Navigation = ({ onOpenResume }) => {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -123,14 +35,21 @@ const Navigation = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  const brand = `${mainBody.firstName} ${
+    mainBody.middleName ? mainBody.middleName[0] + "." : ""
+  } ${mainBody.lastName}`.replace(/\s+/g, " ").trim();
+
   return (
     <Navbar
       expand="lg"
       fixed="top"
-      className={`px-3 ${scrolled ? "navbar-white shadow-sm" : "navbar-transparent"}`}
+      className={`px-3 ${
+        scrolled ? "navbar-white shadow-sm" : "navbar-transparent"
+      }`}
     >
       <Container>
-        <Navbar.Brand
+        <Button
+                variant="light"
           className="navbar-brand"
           href="#home"
           onClick={(e) => {
@@ -138,16 +57,17 @@ const Navigation = () => {
             scrollToId("home");
           }}
         >
-          {`${mainBody.firstName} ${mainBody.middleName?.[0] ?? ""}. ${mainBody.lastName}`}
-        </Navbar.Brand>
+          {brand}
+        </Button>
 
         <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggler" />
 
         <Navbar.Collapse id="basic-navbar-nav">
-          {/* Primary links */}
+          {/* Left side nav links */}
           <Nav className="me-auto">
-            {experiences.show && (
-              <Nav.Link
+            {experiences?.show && (
+              <Button
+                variant="light"
                 href="#experience"
                 onClick={(e) => {
                   e.preventDefault();
@@ -155,11 +75,12 @@ const Navigation = () => {
                 }}
               >
                 Experience
-              </Nav.Link>
+              </Button>
             )}
 
-            {skills.show && (
-              <Nav.Link
+            {skills?.show && (
+              <Button
+                variant="light"
                 href="#skills"
                 onClick={(e) => {
                   e.preventDefault();
@@ -167,11 +88,12 @@ const Navigation = () => {
                 }}
               >
                 Skills
-              </Nav.Link>
+              </Button>
             )}
 
-            {repos.show && (
-              <Nav.Link
+            {repos?.show && (
+              <Button
+                variant="light"
                 href="#projects"
                 onClick={(e) => {
                   e.preventDefault();
@@ -179,34 +101,38 @@ const Navigation = () => {
                 }}
               >
                 Projects
-              </Nav.Link>
+              </Button>
             )}
           </Nav>
 
-          {/* CTAs */}
+          {/* Right side buttons */}
           <div className="d-flex gap-2 mt-3 mt-lg-0">
+            {/* Opens your on-page resume overlay */}
+            {resumeSection?.show && (
+              <Button
+                  variant="light"           
+                  onClick={() => onOpenResume?.()}
+              >
+                View Resume
+              </Button>
+            )}
+
+            {/* Direct download / open in new tab */}
             <Button
-              variant="outline-dark"
-              href={about.resume}
-              target="_blank"
-              rel="noreferrer noopener"
+                variant="light"
+                href={about.resume}
+                target="_blank"
+                rel="noreferrer noopener"
             >
-              Resume
+              Download PDF
             </Button>
 
             <Button
-              variant="dark"
+              variant="light"
               href={`mailto:${getInTouch.email}?subject=Senior%20Software%20Engineer%20Opportunity`}
             >
               Email me
             </Button>
-            {/* <Button
-                variant="outline-dark"
-                onClick={() => scrollToId("projects")}
-              >
-                Projects
-              </Button> */}
-
           </div>
         </Navbar.Collapse>
       </Container>

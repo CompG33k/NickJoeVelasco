@@ -1,29 +1,31 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+
 import {
   navBar,
   mainBody,
   about,
   repos,
-//  leadership,
   skills,
   getInTouch,
-  experiences
+  experiences,
+  resumeSection,
 } from "./editable-stuff/config.js";
+
 import MainBody from "./components/home/MainBody";
 import AboutMe from "./components/home/AboutMe";
 import Project from "./components/home/Project";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Skills from "./components/home/Skills";
-// import {Blog} from "./components/blog/Blog";
-// import BlogPost from "./components/blog/BlogPost";
 import GetInTouch from "./components/home/GetInTouch.jsx";
-//import Leadership from "./components/home/Leadership.jsx";
-
 import Experience from "./components/home/Experience";
+import ResumeOverlay from "./components/home/ResumeOverlay";
 
-const Home = React.forwardRef((props, ref) => {
+/* ===============================
+   HOME PAGE
+================================ */
+const Home = React.forwardRef(({ onOpenResume }, ref) => {
   return (
     <>
       <MainBody
@@ -33,6 +35,7 @@ const Home = React.forwardRef((props, ref) => {
         icons={mainBody.icons}
         ref={ref}
       />
+
       {about.show && (
         <AboutMe
           heading={about.heading}
@@ -42,12 +45,14 @@ const Home = React.forwardRef((props, ref) => {
           resume={about.resume}
         />
       )}
-      {
-        experiences.show && (
-          <Experience experiences={experiences}
-          heading = {experiences.heading}
-          />
+
+      {experiences.show && (
+        <Experience
+          heading={experiences.heading}
+          experiences={experiences}
+        />
       )}
+
       {skills.show && (
         <Skills
           heading={skills.heading}
@@ -55,6 +60,7 @@ const Home = React.forwardRef((props, ref) => {
           softSkills={skills.softSkills}
         />
       )}
+
       {repos.show && (
         <Project
           heading={repos.heading}
@@ -63,30 +69,45 @@ const Home = React.forwardRef((props, ref) => {
           specfic={repos.specificRepos}
         />
       )}
-
-      {/* {leadership.show && (
-        <Leadership
-          heading={leadership.heading}
-          message={leadership.message}
-          img={leadership.images}
-          imageSize={leadership.imageSize}
-        />
-      )} */}
     </>
   );
 });
 
+/* ===============================
+   APP ROOT
+================================ */
 const App = () => {
-  const titleRef = React.useRef();
+  const titleRef = React.useRef(null);
+
+  // ✅ Resume overlay state (MUST live here)
+  const [resumeOpen, setResumeOpen] = React.useState(false);
 
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL + "/"}>
-      {navBar.show && <Navbar ref={titleRef} />}
+      {navBar.show && (
+        <Navbar
+          ref={titleRef}
+          onOpenResume={() => setResumeOpen(true)}
+        />
+      )}
+
       <Routes>
-        <Route path="/" exact element={<Home ref={titleRef} />} />
+        <Route
+          path="/"
+          element={<Home ref={titleRef} onOpenResume={() => setResumeOpen(true)} />}
+        />
       </Routes>
-       {/* {false && <Route path="/blog" exact component={Blog} />}
-      {false && <Route path="/blog/:id" component={BlogPost} />}  */}
+
+      {/* Resume Overlay (same-page viewer) */}
+      {resumeSection.show && (
+        <ResumeOverlay
+          show={resumeOpen}
+          onClose={() => setResumeOpen(false)}
+          heading={resumeSection.heading}
+          fileId={resumeSection.fileId}
+        />
+      )}
+
       <Footer>
         {getInTouch.show && (
           <GetInTouch
