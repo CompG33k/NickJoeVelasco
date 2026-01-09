@@ -14,7 +14,7 @@ const mainBody = {
   middleName: "Joe",
   lastName: "Velasco",
   message:
-  "Senior Software Engineer specializing in C#, .NET, backend APIs, and scalable enterprise systems",
+  "Senior Software Engineer (C# / .NET) building scalable backend systems, REST APIs, and enterprise platforms.\nFocused on performance, reliability, and clean architecture in production environments.\nOpen to Senior/Lead roles — remote or hybrid.",
 icons: [
     { image: "fa-github", url: "https://github.com/CompG33k" },
     { image: "fa-linkedin", url: "https://www.linkedin.com/in/nickvelasco/" },
