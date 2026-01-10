@@ -22,6 +22,7 @@ import GetInTouch from "./components/home/GetInTouch.jsx";
 import Experience from "./components/home/Experience";
 import ResumeOverlay from "./components/home/ResumeOverlay";
 import ScrollToTopButton from "./components/ScrollToTopButton";
+import { HelmetProvider } from "react-helmet-async";
 
 /* ===============================
    HOME PAGE
