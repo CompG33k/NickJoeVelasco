@@ -14,7 +14,7 @@ const mainBody = {
   middleName: "Joe",
   lastName: "Velasco",
   message:
-  "Senior Software Engineer (C# / .NET) building scalable backend systems, REST APIs, and enterprise platforms.\nFocused on performance, reliability, and clean architecture in production environments.\nOpen to Senior/Lead roles — remote or hybrid.",
+  "Senior Software Engineer specializing in C# / .NET, scalable backend systems, and enterprise-grade APIs.\nExperienced in designing high-performance, reliable architectures for production environments.\nOpen to Senior and Lead roles — full-time, contract, consulting, remote, or hybrid.",
 icons: [
     { image: "fa-github", url: "https://github.com/CompG33k" },
     { image: "fa-linkedin", url: "https://www.linkedin.com/in/nickvelasco/" },
@@ -122,7 +122,7 @@ const getInTouch = {
   show: true,
   heading: "Get In Touch",
   message:
-    "I'm always open to Lead/Senior Software Engineering opportunities. If you know of any roles (remote or hybrid), have questions, or just want to connect, feel free to email me at",
+"I'm open to Lead and Senior Software Engineering opportunities, including full-time, contract, consulting, and temporary roles. If you’re hiring for remote or hybrid positions, have questions, or would like to connect, feel free to reach out at",
   email: "nvelasco.joe@gmail.com",
 };
 
