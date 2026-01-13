@@ -1,8 +1,8 @@
 {
-  "name": "NickJoeVelasco-portfolio",
+  "name": "NickJoeVelascoPortfolio",
   "description": "A personal static website/portfolio template hosted with GitHub Pages, built to showcase my recent projects.",
   "homepage": "https://nickjvelasco.com",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",

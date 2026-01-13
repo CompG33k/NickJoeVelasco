@@ -39,6 +39,8 @@ const Navigation = ({ onOpenResume }) => {
     mainBody.middleName ? mainBody.middleName[0] + "." : ""
   } ${mainBody.lastName}`.replace(/\s+/g, " ").trim();
 
+
+  
   return (
     <Navbar
       expand="lg"
@@ -104,37 +106,33 @@ const Navigation = ({ onOpenResume }) => {
               </Button>
             )}
           </Nav>
+            <div className="d-flex gap-2 mt-3 mt-lg-0 align-items-center">
+  {resumeSection?.show && (
+    <Button
+      className="btn-resume"
+      onClick={() => onOpenResume?.()}
+    >
+      View Resume
+    </Button>
+  )}
 
-          {/* Right side buttons */}
-          <div className="d-flex gap-2 mt-3 mt-lg-0">
-            {/* Opens your on-page resume overlay */}
-            {resumeSection?.show && (
-              <Button
-                  variant="light"           
-                  onClick={() => onOpenResume?.()}
-              >
-                View Resume
-              </Button>
-            )}
+  <Button
+    variant="outline-secondary"
+    href={about.resume}
+    target="_blank"
+    rel="noreferrer noopener"
+  >
+    Download PDF
+  </Button>
 
-            {/* Direct download / open in new tab */}
-            <Button
-                variant="light"
-                href={about.resume}
-                target="_blank"
-                rel="noreferrer noopener"
-            >
-              Download PDF
-            </Button>
+  <Button
+    variant="dark"
+    href={`mailto:${getInTouch.email}?subject=Senior%20Software%20Engineer%20Opportunity`}
+  >
+    Email Me
+  </Button>
+</div>
 
-            <Button
-              className="btn btn-dark"
-              variant="light"
-              href={`mailto:${getInTouch.email}?subject=Senior%20Software%20Engineer%20Opportunity`}
-            >
-              Email me
-            </Button>
-          </div>
         </Navbar.Collapse>
       </Container>
     </Navbar>
