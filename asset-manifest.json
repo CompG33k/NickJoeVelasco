@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.42c96ddd.css",
-    "main.js": "/static/js/main.55b7c83c.js",
+    "main.css": "/static/css/main.6d0654b2.css",
+    "main.js": "/static/js/main.c0ca3b3d.js",
     "static/js/453.5ea40303.chunk.js": "/static/js/453.5ea40303.chunk.js",
     "static/media/pizza.JPG": "/static/media/pizza.0c9687d580779fd29bc8.JPG",
     "static/media/NickJoeVelasco.png": "/static/media/NickJoeVelasco.e4b5b5edb7fb47c49eab.png",
@@ -10,12 +10,12 @@
     "static/media/RoboticArmSoftware.png": "/static/media/RoboticArmSoftware.5ee0ce606e2a893839d1.png",
     "static/media/KretekInternational.png": "/static/media/KretekInternational.e9333d5dc95e2dadb5e7.png",
     "index.html": "/index.html",
-    "main.42c96ddd.css.map": "/static/css/main.42c96ddd.css.map",
-    "main.55b7c83c.js.map": "/static/js/main.55b7c83c.js.map",
+    "main.6d0654b2.css.map": "/static/css/main.6d0654b2.css.map",
+    "main.c0ca3b3d.js.map": "/static/js/main.c0ca3b3d.js.map",
     "453.5ea40303.chunk.js.map": "/static/js/453.5ea40303.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.42c96ddd.css",
-    "static/js/main.55b7c83c.js"
+    "static/css/main.6d0654b2.css",
+    "static/js/main.c0ca3b3d.js"
   ]
 }
