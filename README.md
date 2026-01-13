@@ -1,4 +1,5 @@
-Nick Velasco — Software Engineer Portfolio
+Nick Velasco 
+Software Engineer Portfolio
 
 A modern, responsive personal portfolio built with React and Bootstrap, designed to showcase professional experience, technical skills, and projects in a clear, recruiter-friendly format.
 
