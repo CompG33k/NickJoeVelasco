@@ -7,7 +7,7 @@ const pictureLinkRegex = new RegExp(
   /[(http(s)?):(www.)?a-zA-Z0-9@:%._+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_+.~#?&//=]*)/
 );
 
-const AboutMe = ({ heading, message, link, imgSize, resume }) => {
+const AboutMe = ({ heading, message, link, imgSize, resume,imageLink, imageSize, onOpenResume }) => {
   const [profilePicUrl, setProfilePicUrl] = React.useState("");
   const [showPic, setShowPic] = React.useState(Boolean(link));
   // https://stackoverflow.com/questions/55840294/how-to-fix-missing-dependency-warning-when-using-useeffect-react-hook
@@ -50,6 +50,31 @@ const AboutMe = ({ heading, message, link, imgSize, resume }) => {
         <div className={`col-lg-${showPic ? "7" : "12"}`}>
           <h2 className="display-4 mb-5 text-center">{heading}</h2>
           <p className="lead text-center">{message}</p>
+          {/* Mobile-only: opens your resume overlay (same behavior as Navbar "View Resume") */}
+<div className="mobile-only text-center mt-4">
+  <button
+    type="button"
+    className="btn btn-dark btn-lg"
+    onClick={() => onOpenResume?.()}
+    aria-label="View resume"
+  >
+    View Resume
+  </button>
+</div>
+
+{/* Desktop-only: keep your PDF link button (or remove if you want) */}
+{/* <div className="desktop-only text-center mt-4">
+  <a
+    className="btn btn-outline-dark btn-lg"
+    href={resume}
+    target="_blank"
+    rel="noreferrer noopener"
+    aria-label="Download resume PDF"
+  >
+    Download PDF
+  </a>
+</div> */}
+
           {/* {resume && (
             <p className="lead text-center">
               <a

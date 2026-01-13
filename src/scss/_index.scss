@@ -445,3 +445,11 @@ a:focus-visible {
 }
 
 
+/* Mobile-only / Desktop-only helpers */
+.mobile-only { display: none; }
+.desktop-only { display: block; }
+
+@media (max-width: 991.98px) {
+  .mobile-only { display: block; }
+  .desktop-only { display: none; }
+}

@@ -45,6 +45,10 @@ const Home = React.forwardRef(({ onOpenResume }, ref) => {
           link={about.imageLink}
           imgSize={about.imageSize}
           resume={about.resume}
+           
+          imageLink={about.imageLink}
+          imageSize={about.imageSize}
+          onOpenResume={onOpenResume}
         />
       )}
 
