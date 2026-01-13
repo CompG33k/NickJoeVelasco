@@ -37,10 +37,10 @@ const Navigation = ({ onOpenResume }) => {
 
   const brand = `${mainBody.firstName} ${
     mainBody.middleName ? mainBody.middleName[0] + "." : ""
-  } ${mainBody.lastName}`.replace(/\s+/g, " ").trim();
+  } ${mainBody.lastName}`
+    .replace(/\s+/g, " ")
+    .trim();
 
-
-  
   return (
     <Navbar
       expand="lg"
@@ -50,6 +50,7 @@ const Navigation = ({ onOpenResume }) => {
       }`}
     >
       <Container>
+        {/* Brand */}
         <Button
           className="navbar-brand"
           variant="light"
@@ -66,7 +67,20 @@ const Navigation = ({ onOpenResume }) => {
 
         <Navbar.Collapse id="basic-navbar-nav">
           {/* Left side nav links */}
-          <Nav className="me-auto">
+          <Nav className="me-auto gap-2">
+            {about?.show && (
+              <Button
+                variant="light"
+                href="#aboutme"
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToId("aboutme");
+                }}
+              >
+                About Me
+              </Button>
+            )}
+
             {experiences?.show && (
               <Button
                 variant="light"
@@ -106,33 +120,31 @@ const Navigation = ({ onOpenResume }) => {
               </Button>
             )}
           </Nav>
-            <div className="d-flex gap-2 mt-3 mt-lg-0 align-items-center">
-  {resumeSection?.show && (
-    <Button
-      className="btn-resume"
-      onClick={() => onOpenResume?.()}
-    >
-      View Resume
-    </Button>
-  )}
 
-  <Button
-    variant="outline-secondary"
-    href={about.resume}
-    target="_blank"
-    rel="noreferrer noopener"
-  >
-    Download PDF
-  </Button>
+          {/* Right side buttons */}
+          <div className="d-flex gap-2 mt-3 mt-lg-0 align-items-center">
+            {resumeSection?.show && (
+              <Button className="btn-resume" onClick={() => onOpenResume?.()}>
+                View Resume
+              </Button>
+            )}
 
-  <Button
-    variant="dark"
-    href={`mailto:${getInTouch.email}?subject=Senior%20Software%20Engineer%20Opportunity`}
-  >
-    Email Me
-  </Button>
-</div>
+            <Button
+              variant="outline-secondary"
+              href={about.resume}
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              Download PDF
+            </Button>
 
+            <Button
+              variant="dark"
+              href={`mailto:${getInTouch.email}?subject=Senior%20Software%20Engineer%20Opportunity`}
+            >
+              Email Me
+            </Button>
+          </div>
         </Navbar.Collapse>
       </Container>
     </Navbar>
