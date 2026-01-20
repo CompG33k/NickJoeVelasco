@@ -122,7 +122,7 @@ const getInTouch = {
   show: true,
   heading: "Get In Touch",
   message:
-"I'm open to Lead and Senior Software Engineering opportunities, including full-time, contract, consulting, and temporary roles. If you’re hiring for remote or hybrid positions, have questions, or would like to connect, feel free to reach out at",
+"I'm open to Lead and Senior Software Engineering opportunities, including full-time, contract, consulting, and temporary roles. If you’re hiring for full-time, contract, consulting, and temporary roles positions, have questions, or would like to connect, feel free to reach out at",
   email: "nvelasco.joe@gmail.com",
 };
 
