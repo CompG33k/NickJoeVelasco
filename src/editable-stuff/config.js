@@ -51,7 +51,7 @@ const repos = {
   // These appear FIRST, in this exact order
   specificRepos: [
     "Auto-Anton-App",
-    "Auto-Open-Nick",
+    "CantaTune",
     "ApiNetCoreWebApi",
     "NickJoeVelasco",
   ],
