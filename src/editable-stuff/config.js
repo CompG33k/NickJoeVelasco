@@ -54,6 +54,8 @@ const repos = {
     "CantaTune",
     "ApiNetCoreWebApi",
     "NickJoeVelasco",
+    "datalens",
+    "elementa",
   ],
 };
 
